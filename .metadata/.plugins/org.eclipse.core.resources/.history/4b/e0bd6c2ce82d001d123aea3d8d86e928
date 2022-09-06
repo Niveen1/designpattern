@@ -1,0 +1,11 @@
+package com.assignment.designpatterns.shape;
+
+public class ShapeConteaxt {
+	
+	public void calculateArea(Shape paymentMethod){
+		int amount = calculateTotal();
+		paymentMethod.pay(amount);
+	}
+
+
+}

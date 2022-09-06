@@ -1,0 +1,6 @@
+package com.assignment.designpatterns.facade;
+
+public interface CircleShapeFacade {
+	printGreenCircle();
+	printRedCircle();
+}

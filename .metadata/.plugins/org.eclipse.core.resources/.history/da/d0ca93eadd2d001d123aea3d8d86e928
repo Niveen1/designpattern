@@ -1,0 +1,5 @@
+package com.assignment.designpatterns.shape;
+
+public abstract class ShapeDecorator {
+
+}

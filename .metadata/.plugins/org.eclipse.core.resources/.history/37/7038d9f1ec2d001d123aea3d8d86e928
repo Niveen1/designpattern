@@ -1,0 +1,24 @@
+package com.assignment.designpatterns;
+
+import com.assignment.designpatterns.area.ShapeAreaContext;
+import com.assignment.designpatterns.command.PrintCommand;
+import com.assignment.designpatterns.command.PrintGreenShapeCommand;
+import com.assignment.designpatterns.command.PrintRedShapeCommand;
+import com.assignment.designpatterns.facade.ShapeFacadImpl;
+import com.assignment.designpatterns.facade.ShapeFacade;
+import com.assignment.designpatterns.shape.Shape;
+import com.assignment.designpatterns.shape.ShapeFactory;
+import com.assignment.designpatterns.shape.TriangleShape;
+
+public class Application {
+	public static void main(String[] args) {
+
+
+		ShapeFacade shapeFacade=new ShapeFacadImpl();
+		shapeFacade.printGreenShape();
+		shapeFacade.printRedShape();
+		shapeFacade.calculateTriangleArea();
+	
+
+}
+}

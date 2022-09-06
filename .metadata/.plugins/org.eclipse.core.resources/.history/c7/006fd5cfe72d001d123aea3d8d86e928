@@ -1,0 +1,9 @@
+package com.assignment.designpatterns.shape;
+
+public class TriangleShape implements Shape {
+
+	@Override
+	public String getShape() {
+		return "Shape Name is Triangle";
+	}
+}

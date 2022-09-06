@@ -1,0 +1,12 @@
+package com.assignment.designpatterns.shape;
+
+public class GreenShape extends ShapeDecorator {
+
+	public GreenShape(Shape shape) {
+		super(shape);
+	}
+
+	public String getShape() {
+		return super.getShape() + " With color Green";
+	}
+}

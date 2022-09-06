@@ -1,0 +1,6 @@
+package com.assignment.designpatterns.command;
+
+public abstract class Command {
+    public abstract voi	d execute();
+
+}

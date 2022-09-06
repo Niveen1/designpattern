@@ -1,0 +1,7 @@
+package com.assignment.designpatterns.shape;
+
+public interface Shape {
+	public String getShape();
+	
+	public void calculateArea(Shape shape);
+}

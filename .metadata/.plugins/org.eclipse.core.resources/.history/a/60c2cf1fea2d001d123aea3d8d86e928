@@ -1,0 +1,12 @@
+package com.assignment.designpatterns.shape;
+
+import com.assignment.designpatterns.area.Area;
+
+public class ShapeContext {
+	
+	public void calculateArea(Area area){
+		area.calculateArea();
+	}
+
+
+}

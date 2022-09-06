@@ -1,0 +1,5 @@
+package com.assignment.designpatterns.facade;
+
+public class ShapeFacadImpl {
+
+}

@@ -1,0 +1,13 @@
+package com.assignment.designpatterns;
+
+import com.assignment.designpatterns.entity.Shape;
+
+public class Application {
+	public static void main(String[] args)
+	{
+		ShapeFactory shapeFactory = new ShapeFactory();
+		Shape shape = shapeFactory.createShape("CIRCLE");
+		shape.printShape();
+	}
+}
+

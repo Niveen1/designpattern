@@ -1,0 +1,7 @@
+package com.assignment.designpatterns.shape;
+
+public interface Shape {
+	void printShape();
+}
+
+

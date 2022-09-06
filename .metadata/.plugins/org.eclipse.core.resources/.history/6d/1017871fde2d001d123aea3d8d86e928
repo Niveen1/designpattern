@@ -1,0 +1,11 @@
+package com.assignment.designpatterns.shape;
+
+public class RedShape {
+	public RedShape(Shape shape) {
+		super(shape);
+	}
+
+	public String getShape() {
+		return super.getShape() + " With color Red";
+	}
+}

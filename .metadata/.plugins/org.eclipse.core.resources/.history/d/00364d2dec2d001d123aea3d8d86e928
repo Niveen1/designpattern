@@ -1,0 +1,28 @@
+package com.assignment.designpatterns.facade;
+
+import com.assignment.designpatterns.command.PrintCommand;
+import com.assignment.designpatterns.command.PrintGreenShapeCommand;
+import com.assignment.designpatterns.command.PrintRedShapeCommand;
+import com.assignment.designpatterns.shape.Shape;
+import com.assignment.designpatterns.shape.ShapeFactory;
+
+public class ShapeFacadImpl implements ShapeFacade {
+
+	@Override
+	public void printGreenShape() {
+		ShapeFactory shapeFactory = new ShapeFactory();
+
+		Shape circleShape = shapeFactory.createShape("CIRCLE");
+		PrintCommand printGreenCircleCommand = new PrintGreenShapeCommand(circleShape);
+		PrintCommand printRedCircleCommand = new PrintRedShapeCommand(circleShape);
+		printGreenCircleCommand.print();
+		printRedCircleCommand.print();
+	}
+
+	@Override
+	public void printRedShape() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

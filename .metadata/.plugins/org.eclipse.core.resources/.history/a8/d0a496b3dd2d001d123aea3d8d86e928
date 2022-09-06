@@ -1,0 +1,10 @@
+package com.assignment.designpatterns.shape;
+
+public class CircleShape implements Shape {
+
+	@Override
+	public void getShape()
+	{
+		System.out.println("Shape Name is Circle");
+	}
+}

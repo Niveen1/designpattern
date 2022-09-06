@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.entity.SMSNotification"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.entity.EmailNotification"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.entity.PushNotification"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.entity.Notification"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.NotificationFactory"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.shape.ShapeDecorator"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.shape.RedShape"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.color.GreenShape"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.command.CopyCommand"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.color.RedShape"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.command.Command"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.command.PrintGreenShapeCommand"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.command.PrintRedShapeCommand"/>
+<fullyQualifiedTypeName name="javax.sound.midi.Soundbank"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.shape.Shape"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.shape.ShapeContext"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.area.Area"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.shape.TriangleShape"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.facade.ShapeFacade"/>
+<fullyQualifiedTypeName name="com.assignment.designpatterns.facade.ShapeFacadImpl"/>
+</qualifiedTypeNameHistroy>

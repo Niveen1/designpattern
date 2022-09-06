@@ -1,0 +1,25 @@
+package com.assignment.designpatterns;
+
+import com.assignment.designpatterns.color.GreenShape;
+import com.assignment.designpatterns.color.RedShape;
+import com.assignment.designpatterns.command.Command;
+import com.assignment.designpatterns.command.PrintGreenShapeCommand;
+import com.assignment.designpatterns.command.PrintRedShapeCommand;
+import com.assignment.designpatterns.shape.Shape;
+import com.assignment.designpatterns.shape.ShapeFactory;
+
+public class Application {
+	public static void main(String[] args) {
+		ShapeFactory shapeFactory = new ShapeFactory();
+		Shape circleShape = shapeFactory.createShape("CIRCLE");
+		Command printGreenCircleCommand=new PrintGreenShapeCommand(circleShape);
+		Command printRedCircle=new PrintRedShapeCommand(circleShape);
+
+		printGreenCircleCommand.execute();		
+		printRedCircle.execute();
+		
+		Shape rectangleShape = shapeFactory.createShape("RECTANGLE");
+		GreenShape greenRectangle= new GreenShape (rectangleShape);
+		System.out.println(greenRectangle.getShape());
+	}
+}

@@ -1,0 +1,9 @@
+package com.assignment.designpatterns.entity;
+
+public class RectangleShape implements Shape {
+
+	@Override
+	public void printShape() {
+		System.out.println("ShapeName is Rectangle");
+	}
+}

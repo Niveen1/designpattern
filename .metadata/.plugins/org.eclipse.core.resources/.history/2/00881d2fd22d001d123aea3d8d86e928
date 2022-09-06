@@ -1,0 +1,11 @@
+package com.assignment.designpatterns.entity;
+
+public class EmailNotification implements Shape {
+
+	@Override
+	public void notifyUser()
+	{
+		// TODO Auto-generated method stub
+		System.out.println("Sending an e-mail notification");
+	}
+}

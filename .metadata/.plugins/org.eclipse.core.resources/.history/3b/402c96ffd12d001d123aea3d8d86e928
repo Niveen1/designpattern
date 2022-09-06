@@ -1,0 +1,13 @@
+package com.assignment.designpatterns;
+
+import com.assignment.designpatterns.entity.Notification;
+
+public class Application {
+	public static void main(String[] args)
+	{
+		ShapeFactory notificationFactory = new ShapeFactory();
+		Notification notification = notificationFactory.createNotification("SMS");
+		notification.notifyUser();
+	}
+}
+

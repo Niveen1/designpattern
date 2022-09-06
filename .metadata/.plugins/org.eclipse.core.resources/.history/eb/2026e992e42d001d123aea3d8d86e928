@@ -1,0 +1,15 @@
+package com.assignment.designpatterns.command;
+
+import com.assignment.designpatterns.color.RedShape;
+import com.assignment.designpatterns.shape.Shape;
+
+public class PrintRedShapeCommand extends Command {
+	public PrintRedShapeCommand(Shape shape) {
+		super(shape);
+	}
+
+	@Override
+	public void execute() {
+		System.out.println(new RedShape(shape).getShape());
+	}
+}

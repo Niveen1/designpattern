@@ -1,0 +1,21 @@
+package com.assignment.designpatterns.command;
+
+public class PrintCommand extends Command {
+public PrintCommand() {
+	// TODO Auto-generated constructor stub
+}
+}
+
+
+public class CopyCommand extends Command {
+
+    public CopyCommand(Editor editor) {
+        super(editor);
+    }
+
+    @Override
+    public boolean execute() {
+        editor.clipboard = editor.textField.getSelectedText();
+        return false;
+    }
+}

@@ -1,0 +1,13 @@
+package com.assignment.designpatterns.command;
+
+import com.assignment.designpatterns.shape.Shape;
+
+public abstract class PrintCommand {
+	Shape shape;
+
+	public PrintCommand(Shape shape) {
+		this.shape = shape;
+	}
+
+	public abstract void print();
+}
