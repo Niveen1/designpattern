@@ -3,9 +3,11 @@ package com.assignment.designpatterns.command;
 import com.assignment.designpatterns.color.RedShape;
 import com.assignment.designpatterns.shape.Shape;
 
-public class PrintRedShapeCommand extends PrintCommand {
+public class PrintRedShapeCommand implements PrintCommand {
+	Shape shape;
+
 	public PrintRedShapeCommand(Shape shape) {
-		super(shape);
+		this.shape=shape;
 	}
 
 	@Override

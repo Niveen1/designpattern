@@ -3,9 +3,11 @@ package com.assignment.designpatterns.command;
 import com.assignment.designpatterns.color.GreenShape;
 import com.assignment.designpatterns.shape.Shape;
 
-public class PrintGreenShapeCommand extends PrintCommand {
+public class PrintGreenShapeCommand implements PrintCommand {
+	Shape shape;
+
 	public PrintGreenShapeCommand(Shape shape) {
-		super(shape);
+		this.shape=shape;
 	}
 
 	@Override

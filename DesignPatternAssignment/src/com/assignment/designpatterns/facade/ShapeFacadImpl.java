@@ -40,10 +40,9 @@ public class ShapeFacadImpl implements ShapeFacade {
 	@Override
 	public void calculateTriangleArea() {
 		ShapeFactory shapeFactory = new ShapeFactory();
-
-		ShapeAreaContext shapeContext = new ShapeAreaContext();
 		Shape triangleShape = shapeFactory.createShape("TRIANGLE");
-		shapeContext.calculateArea((TriangleShape) triangleShape);
+		ShapeAreaContext shapeContext = new ShapeAreaContext((TriangleShape) triangleShape);
+		shapeContext.calculateArea();
 	
 	}
 
