@@ -7,7 +7,7 @@ public class PrintGreenShapeCommand implements PrintCommand {
 	Shape shape;
 
 	public PrintGreenShapeCommand(Shape shape) {
-		this.shape=shape;
+		this.shape = shape;
 	}
 
 	@Override

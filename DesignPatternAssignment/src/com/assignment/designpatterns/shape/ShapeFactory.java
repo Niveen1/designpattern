@@ -1,20 +1,18 @@
 package com.assignment.designpatterns.shape;
 
 public class ShapeFactory {
-	public Shape createShape(String shapeName)
-	{
-		if (shapeName == null || shapeName.isEmpty())
+	public Shape createShape(ShapeEnum shapeName) {
+		if (shapeName == null)
 			return null;
 		switch (shapeName) {
-		case "CIRCLE":
+		case CIRCLE:
 			return new CircleShape();
-		case "RECTANGLE":
+		case RECTANGLE:
 			return new RectangleShape();
-		case "TRIANGLE":
+		case TRIANGLE:
 			return new TriangleShape();
 		default:
-			throw new IllegalArgumentException("Unknown Shape "+shapeName);
+			throw new IllegalArgumentException("Unknown Shape " + shapeName);
 		}
 	}
 }
-
